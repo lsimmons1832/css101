@@ -45,6 +45,71 @@ h2 ~ p {
 }
 
 #flex-kermit img {
-	max-width: 300px;
+	max-width: 30%;
 	padding: 10px;
+	margin: 15px;
 }
+
+/*Hover on anchor tags*/
+
+a:hover {
+	font-size: 50px;
+}
+
+/*active aka. click and hold*/
+
+a:active {
+	background-color: green;
+}
+
+/* Focus will change the inout you have clicked inside of*/
+input:focus {
+	background-color: yellow;
+}
+
+/* nth- child */
+
+.sub-div li:nth-child(2n +1) {
+	border: 5px solid pink;
+}
+
+.sub-div li:nth-child(2n) {
+	border: 5px solid blue;
+}
+
+.sub-div li:nth-of-type(2n){
+	color: blue;
+}
+
+section p:nth-child(2) {
+	color: red;
+}
+
+section p:nth-of-type(2) {
+	color: orange;
+}
+
+/* before*/
+#main-div-1::before {
+	content: "\201c"; /*unicode symbol for "*/
+	font-size: 60px;
+	font-weight: bold;
+	color: purple;
+}
+
+#main-div-1::after {
+	content: "$$$$$$";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
